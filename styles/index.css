@@ -37,11 +37,19 @@ nav {
   z-index: 50;
 }
 nav.sticky {
-  box-shadow: 0 1px 25px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 50px rgba(0, 0, 0, 0.05);
 }
 nav .logo {
   margin-left: 12vw;
   user-select: none;
+  display: flex;
+  align-items: center;
+}
+nav .logo h2 {
+  color: #cfcfcf;
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 12px;
 }
 nav .nav-items {
   display: flex;
@@ -150,7 +158,7 @@ nav .nav-items p:hover {
   border-radius: 6px;
   max-height: 55px;
   cursor: pointer;
-  transition: all 0.24s ease;
+  transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
 }
@@ -198,4 +206,245 @@ nav .nav-items p:hover {
 }
 #faq .faq-container .faq-question.active .faq-q-head i {
   transform: rotate(90deg);
+}
+
+.dashboard-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  background: #101010;
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  transition: all 0.3s ease;
+  z-index: 50;
+}
+.dashboard-nav.sticky {
+  box-shadow: 0 2px 50px rgba(0, 0, 0, 0.05);
+}
+.dashboard-nav .logo {
+  margin-left: 12vw;
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+.dashboard-nav .logo h2 {
+  color: #cfcfcf;
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 12px;
+}
+.dashboard-nav .nav-items {
+  display: flex;
+  align-items: center;
+  margin-right: 12vw;
+}
+.dashboard-nav .nav-items p {
+  margin-left: 38px;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.dashboard-nav .nav-items p:hover {
+  color: #b8b8b8;
+}
+
+.dashboard {
+  background-color: #101010;
+  width: 100vw;
+  height: 90vh;
+}
+
+.page-select {
+  display: flex;
+  align-items: center;
+  margin-left: 12vw;
+  margin-right: 12vw;
+  margin-top: 10vh;
+  padding-top: 2vh;
+  background-color: #101010;
+}
+.page-select .page-select-item {
+  color: #8a8a8a;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  user-select: none;
+}
+.page-select .page-select-item:not(:first-child) {
+  margin-left: 32px;
+}
+.page-select .page-select-item::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #8a8a8a;
+  position: absolute;
+  left: 0;
+  top: 120%;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+.page-select .page-select-item:hover {
+  color: #fff;
+}
+.page-select .page-select-item.active {
+  color: #fff;
+  cursor: default;
+}
+.page-select .page-select-item.active::after {
+  background-color: #e34257;
+  opacity: 1;
+}
+
+.head {
+  margin-top: 4vh;
+  margin-left: 12vw;
+  margin-right: 12vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+.head h1 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 26px;
+}
+.head button {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 9px 22px;
+  user-select: none;
+  border-radius: 5px;
+  background-color: #e34257;
+  transition: all 0.3s ease;
+}
+.head button:hover {
+  background-color: #d81e5b;
+}
+
+.partners,
+.companies,
+.staff-members,
+.applications {
+  margin-left: 12vw;
+  margin-right: 12vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 2vh;
+  transition: transform 0.4s ease;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(30px);
+}
+.partners .partner,
+.partners .company,
+.partners .staff-member,
+.partners .application,
+.companies .partner,
+.companies .company,
+.companies .staff-member,
+.companies .application,
+.staff-members .partner,
+.staff-members .company,
+.staff-members .staff-member,
+.staff-members .application,
+.applications .partner,
+.applications .company,
+.applications .staff-member,
+.applications .application {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #131313;
+  padding: 8px 18px;
+  border-radius: 5px;
+  margin-top: 6px;
+}
+.partners .partner h3,
+.partners .company h3,
+.partners .staff-member h3,
+.partners .application h3,
+.companies .partner h3,
+.companies .company h3,
+.companies .staff-member h3,
+.companies .application h3,
+.staff-members .partner h3,
+.staff-members .company h3,
+.staff-members .staff-member h3,
+.staff-members .application h3,
+.applications .partner h3,
+.applications .company h3,
+.applications .staff-member h3,
+.applications .application h3 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.partners .partner button,
+.partners .company button,
+.partners .staff-member button,
+.partners .application button,
+.companies .partner button,
+.companies .company button,
+.companies .staff-member button,
+.companies .application button,
+.staff-members .partner button,
+.staff-members .company button,
+.staff-members .staff-member button,
+.staff-members .application button,
+.applications .partner button,
+.applications .company button,
+.applications .staff-member button,
+.applications .application button {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  outline: none;
+  border: none;
+  background-color: #1b1b1b;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 9px 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+.partners .partner button:hover,
+.partners .company button:hover,
+.partners .staff-member button:hover,
+.partners .application button:hover,
+.companies .partner button:hover,
+.companies .company button:hover,
+.companies .staff-member button:hover,
+.companies .application button:hover,
+.staff-members .partner button:hover,
+.staff-members .company button:hover,
+.staff-members .staff-member button:hover,
+.staff-members .application button:hover,
+.applications .partner button:hover,
+.applications .company button:hover,
+.applications .staff-member button:hover,
+.applications .application button:hover {
+  background-color: #242424;
+}
+.partners.active,
+.companies.active,
+.staff-members.active,
+.applications.active {
+  position: relative;
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0px);
 }
