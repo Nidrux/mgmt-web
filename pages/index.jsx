@@ -1,5 +1,6 @@
 // Module Imports
 import Image from 'next/image';
+import { useState } from 'react';
 
 // Component Imports
 import Nav from '../components/Nav';
@@ -9,6 +10,8 @@ import InfoImg from '../public/Info.svg';
 import Waves from '../public/Waves.svg';
 
 export default function Home() {
+  const [activeFAQ, setActiveFAQ] = useState('');
+
   return (
     <div>
       <Nav />
@@ -53,6 +56,56 @@ export default function Home() {
           <h2>
             FAQ<span>.</span>
           </h2>
+          <div className='faq-container'>
+            <div
+              className={`faq-question ${activeFAQ === 'faq1' ? 'active' : ''}`}
+              onClick={() =>
+                activeFAQ === 'faq1' ? setActiveFAQ('') : setActiveFAQ('faq1')
+              }
+            >
+              <div className='faq-q-head'>
+                <i className='bx bx-chevron-right'></i>
+                <h3>What is Mezo Management?</h3>
+              </div>
+              <div className='faq-q-content'>
+                At Mezo Management, we bridge the gap between brands and content
+                creators and help brands and creators alike find quality
+                partnerships.
+              </div>
+            </div>
+            <div
+              className={`faq-question ${activeFAQ === 'faq2' ? 'active' : ''}`}
+              onClick={() =>
+                activeFAQ === 'faq2' ? setActiveFAQ('') : setActiveFAQ('faq2')
+              }
+            >
+              <div className='faq-q-head'>
+                <i className='bx bx-chevron-right'></i>
+                <h3>Why Mezo Management?</h3>
+              </div>
+              <div className='faq-q-content'>
+                At Mezo Management we only partner with creators and companies
+                that we ourselves have verified and are 100% legitimate. We
+                always deliver quality over quantity. We only promote products
+                with creators we believe in as a brand.
+              </div>
+            </div>
+            <div
+              className={`faq-question ${activeFAQ === 'faq3' ? 'active' : ''}`}
+              onClick={() =>
+                activeFAQ === 'faq3' ? setActiveFAQ('') : setActiveFAQ('faq3')
+              }
+            >
+              <div className='faq-q-head'>
+                <i className='bx bx-chevron-right'></i>
+                <h3>Can you trust us?</h3>
+              </div>
+              <div className='faq-q-content'>
+                Yes, you can. If you dont trust us check out our reviews down
+                below!
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </div>
