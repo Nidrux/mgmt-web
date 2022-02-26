@@ -5,9 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "open:dev": "next dev",
+    "open:scss": "gulp",
+    "open": "concurrently npm:open:*"
   },
   "dependencies": {
+    "concurrently": "^7.0.0",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "next": "12.1.0",
