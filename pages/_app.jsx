@@ -1,23 +1,11 @@
-import Head from 'next/head';
 import '../styles/index.css';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
         <title>Mezo Management</title>
-        <meta name='description' content='Mezo Management' />
-        <link rel='icon' href='/Logo.svg' />
-        <link rel='preconnect' href='https://fonts.googleapis.com' />
-        <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
-        <link
-          href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'
-          rel='stylesheet'
-        />
-        <link
-          href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'
-          rel='stylesheet'
-        ></link>
       </Head>
       <Component {...pageProps} />
     </>
