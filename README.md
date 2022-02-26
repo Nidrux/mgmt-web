@@ -11,6 +11,11 @@ At Mezo Management, we bridge the gap between brands and content creators and he
 - Login Site
 
 
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
 ## Feedback
 
 If you have any feedback, please reach out to us at system@mezomgmt.com
