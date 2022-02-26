@@ -1,0 +1,19 @@
+#faq {
+  background-color: $secondaryBg;
+  width: 100vw;
+  height: 100vh;
+  transform: translateY(5vh);
+
+  h2 {
+    margin-left: 12vw;
+    margin-right: 12vw;
+    padding-top: 8vh;
+    font-weight: 700;
+    color: $text;
+    font-size: 28px;
+
+    span {
+      color: $gray;
+    }
+  }
+}

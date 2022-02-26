@@ -1,0 +1,40 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  background: $mainBg;
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  transition: all 0.3s ease;
+  z-index: 50;
+
+  &.sticky {
+    box-shadow: 0 1px 25px rgba(0, 0, 0, 0.05);
+  }
+
+  .logo {
+    margin-left: 12vw;
+    user-select: none;
+  }
+
+  .nav-items {
+    display: flex;
+    align-items: center;
+    margin-right: 12vw;
+
+    p {
+      margin-left: 38px;
+      cursor: pointer;
+      color: $text;
+      transition: all 0.3s ease;
+      position: relative;
+
+      &:hover {
+        color: $lightGray;
+      }
+    }
+  }
+}

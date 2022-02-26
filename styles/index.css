@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #eb5e55;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-track {
+  width: 0.5rem;
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #3a3335;
+  width: 0.5rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  background: #eb5e55;
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  transition: all 0.3s ease;
+  z-index: 50;
+}
+nav.sticky {
+  box-shadow: 0 1px 25px rgba(0, 0, 0, 0.05);
+}
+nav .logo {
+  margin-left: 12vw;
+  user-select: none;
+}
+nav .nav-items {
+  display: flex;
+  align-items: center;
+  margin-right: 12vw;
+}
+nav .nav-items p {
+  margin-left: 38px;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s ease;
+  position: relative;
+}
+nav .nav-items p:hover {
+  color: #b8b8b8;
+}
+
+#landing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #eb5e55;
+}
+#landing h1 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #3a3335;
+  text-align: center;
+}
+#landing h1 span {
+  color: #fff;
+  font-weight: 800;
+}
+
+#info {
+  height: 80vh;
+}
+#info h2 {
+  margin-left: 12vw;
+  margin-right: 12vw;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+#info h2 span {
+  color: #d81e5b;
+}
+#info .content {
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14vh;
+}
+#info .content .text {
+  margin-left: 12vw;
+}
+#info .content .text p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 19px;
+  width: 50vw;
+  margin-top: 6px;
+}
+#info .content .image {
+  margin-right: 12vw;
+  transform: translateY(-60px);
+}
+#info .waves {
+  z-index: 5;
+}
+
+#faq {
+  background-color: #d81e5b;
+  width: 100vw;
+  height: 100vh;
+  transform: translateY(5vh);
+}
+#faq h2 {
+  margin-left: 12vw;
+  margin-right: 12vw;
+  padding-top: 8vh;
+  font-weight: 700;
+  color: #fff;
+  font-size: 28px;
+}
+#faq h2 span {
+  color: #3a3335;
+}
