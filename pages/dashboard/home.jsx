@@ -1,9 +1,13 @@
 // Module Imports
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useSession, signIn, signOut } from 'next-auth/react';
 import checkEmail from '../../utils/checkEmail';
+import { useRecoilState } from 'recoil';
+
+// State Management
+import { addPartnerModalAtom } from '../../atoms/modalAtoms';
 
 // Component Imports
 import AddPartnerModal from '../../components/AddPartnerModal';
@@ -14,6 +18,9 @@ import Logo from '../../public/Logo.svg';
 const Home = () => {
   const { data: session } = useSession();
   const [currentPage, setCurrentPage] = useState('Partners');
+
+  // Partner Modal
+  const [partnerModal, setPartnerModal] = useRecoilState(addPartnerModalAtom);
 
   if (session) {
     if (checkEmail(session.user.email)) {
@@ -71,7 +78,12 @@ const Home = () => {
           <div className='head'>
             <h1>{currentPage}</h1>
             {currentPage === 'Partners' ? (
-              <button className='add-partner-btn'>Add partner</button>
+              <button
+                className='add-partner-btn'
+                onClick={() => setTest(!test)}
+              >
+                Add partner
+              </button>
             ) : (
               ''
             )}
