@@ -1,6 +1,7 @@
 import '../styles/index.css';
 import Head from 'next/head';
 import { SessionProvider } from 'next-auth/react';
+import { RecoilRoot } from 'recoil';
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
@@ -9,7 +10,9 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
         <title>Mezo Management</title>
       </Head>
       <SessionProvider session={session}>
-        <Component {...pageProps} />
+        <RecoilRoot>
+          <Component {...pageProps} />
+        </RecoilRoot>
       </SessionProvider>
     </>
   );

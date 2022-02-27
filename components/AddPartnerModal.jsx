@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { useRecoilState } from 'recoil';
+import { addPartnerModalAtom } from '../atoms/modalAtoms';
 
 const AddPartnerModal = () => {
-  const [isOpen, setIsOpen] = useState();
+  const [isOpen, setIsOpen] = useRecoilState(addPartnerModalAtom);
 
   return (
     <div className='add-partner-modal-container'>
