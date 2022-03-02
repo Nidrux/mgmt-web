@@ -1,4 +1,6 @@
 import '../styles/index.css';
+import 'swiper/css';
+import 'swiper/css/pagination';
 import Head from 'next/head';
 import { SessionProvider } from 'next-auth/react';
 import { RecoilRoot } from 'recoil';
