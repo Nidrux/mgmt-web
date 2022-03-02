@@ -1,9 +1,13 @@
 // Module Imports
 import Image from 'next/image';
 import { useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper';
 
 // Component Imports
 import Nav from '../components/Nav';
+import BackToTopBtn from '../components/BackToTopBtn';
+import Review from '../components/Review';
 
 // Other Imports
 import InfoImg from '../public/Info.svg';
@@ -107,6 +111,60 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <section id='reviews'>
+          <h2>
+            Reviews<span>.</span>
+          </h2>
+          <Swiper
+            modules={[Pagination]}
+            pagination={{ clickable: true, dynamicBullets: true }}
+            spaceBetween={50}
+            slidesPerView={1}
+            className='review-slider'
+          >
+            <SwiperSlide className='review'>
+              <h3>Jared Carpenter</h3>
+              <p>
+                I've worked with Mezo for a few months now, and while he and the
+                organization are pretty young - they make up for that with
+                diligence, effort, and professionalism with partners and
+                clients. I really look forward to working with them further, and
+                watching them transform from a collective network to a full
+                fledged agency. Salad salutes your service.
+              </p>
+              <h4>Salad Technologies Employee</h4>
+            </SwiperSlide>
+            <SwiperSlide className="review">
+              <Review
+                name='Jared Carpenter'
+                description="I've worked with Mezo for a few months now, and while he and the
+                organization are pretty young - they make up for that with
+                diligence, effort, and professionalism with partners and
+                clients. I really look forward to working with them further, and
+                watching them transform from a collective network to a full
+                fledged agency. Salad salutes your service."
+                rank='Salad Technologies Employee'
+              />
+            </SwiperSlide>
+            <SwiperSlide className='review'>
+              <h3>Yeet Boi</h3>
+              <p>
+                I've worked with Mezo for a few months now, and while he and the
+                organization are pretty young - they make up for that with
+                diligence, effort, and professionalism with partners and
+                clients. I really look forward to working with them further, and
+                watching them transform from a collective network to a full
+                fledged agency. Salad salutes your service.
+              </p>
+              <h4>Friend</h4>
+            </SwiperSlide>
+          </Swiper>
+        </section>
+
+        <footer>Made with ♥ by Mezo Management 2022 ©</footer>
+
+        <BackToTopBtn />
       </main>
     </div>
   );

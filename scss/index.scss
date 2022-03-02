@@ -1,6 +1,11 @@
 // Util Imports
 @import './utils/vars';
 
+// Swiper
+:root {
+  --swiper-pagination-color: #fff;
+}
+
 *,
 *::before,
 *::after {
@@ -12,7 +17,8 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: $mainBg;
-  overflow-x: hidden;
+  overflow: overlay;
+  scroll-behavior: smooth;
 
   // Scrollbar
   &::-webkit-scrollbar {
@@ -20,13 +26,41 @@ body {
   }
 
   &::-webkit-scrollbar-track {
-    width: 0.5rem;
     background: transparent;
   }
 
   &::-webkit-scrollbar-thumb {
     background-color: $gray;
-    width: 0.5rem;
+  }
+}
+
+.backToTopBtn {
+  border-radius: 3px;
+  background-color: $grayContrastHover;
+  position: fixed;
+  right: 50px;
+  bottom: 80px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+
+  i {
+    font-size: 24px;
+    color: #fff;
+    user-select: none;
+    padding: 12px;
+  }
+
+  &:hover {
+    background-color: $darkBg;
+  }
+
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
   }
 }
 
@@ -36,3 +70,5 @@ body {
 @import './components/infoSection';
 @import './components/faqSection';
 @import './components/dashboard';
+@import './components/reviews';
+@import './components/footer';

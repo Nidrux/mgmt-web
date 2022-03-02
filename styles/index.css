@@ -1,3 +1,7 @@
+:root {
+  --swiper-pagination-color: #fff;
+}
+
 *,
 *::before,
 *::after {
@@ -9,18 +13,44 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #eb5e55;
-  overflow-x: hidden;
+  overflow: overlay;
+  scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
   width: 0.5rem;
 }
 body::-webkit-scrollbar-track {
-  width: 0.5rem;
   background: transparent;
 }
 body::-webkit-scrollbar-thumb {
   background-color: #3a3335;
-  width: 0.5rem;
+}
+
+.backToTopBtn {
+  border-radius: 3px;
+  background-color: #242424;
+  position: fixed;
+  right: 50px;
+  bottom: 80px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+}
+.backToTopBtn i {
+  font-size: 24px;
+  color: #fff;
+  user-select: none;
+  padding: 12px;
+}
+.backToTopBtn:hover {
+  background-color: #101010;
+}
+.backToTopBtn.active {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
 }
 
 nav {
@@ -125,7 +155,7 @@ nav .nav-items p:hover {
 #faq {
   background-color: #d81e5b;
   width: 100vw;
-  height: 100vh;
+  height: 46vh;
   transform: translateY(5vh);
 }
 #faq h2 {
@@ -447,4 +477,56 @@ nav .nav-items p:hover {
   opacity: 1;
   pointer-events: all;
   transform: translateY(0px);
+}
+
+#reviews {
+  background-color: #d81e5b;
+  height: 40vh;
+}
+#reviews h2 {
+  margin-left: 12vw;
+  margin-right: 12vw;
+  padding-top: 8vh;
+  font-weight: 700;
+  color: #fff;
+  font-size: 28px;
+  margin-left: 12vw;
+  margin-right: 12vw;
+}
+#reviews h2 span {
+  color: #3a3335;
+}
+#reviews .review-slider {
+  margin-left: 12vw;
+  margin-right: 12vw;
+  margin-top: 24px;
+}
+#reviews .review-slider .review h3 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  user-select: none;
+}
+#reviews .review-slider .review p {
+  color: #fff;
+  font-weight: 200;
+  font-size: 18px;
+  user-select: none;
+}
+#reviews .review-slider .review h4 {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 8px;
+  user-select: none;
+}
+
+footer {
+  background-color: #3a3335;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 70px;
 }
