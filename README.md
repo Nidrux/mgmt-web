@@ -27,6 +27,4 @@ If you have any feedback, please reach out to us at system@mezomgmt.com
 ## Authors
 
 - [@Marc](https://github.com/MarcWebDev)
-- [@HumayunKamal](https://github.com/HumayunKamal)
 - [@Mezo](https://github.com/mezotv)
-
