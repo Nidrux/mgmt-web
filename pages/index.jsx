@@ -1,5 +1,6 @@
 // Module Imports
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper';
@@ -11,6 +12,7 @@ import Review from '../components/Review';
 
 // Other Imports
 import InfoImg from '../public/Info.svg';
+import LogoColored from '../public/LogoColor.svg';
 import Waves from '../public/Waves.svg';
 
 export default function Home() {
@@ -124,18 +126,6 @@ export default function Home() {
             className='review-slider'
           >
             <SwiperSlide className='review'>
-              <h3>Jared Carpenter</h3>
-              <p>
-                I've worked with Mezo for a few months now, and while he and the
-                organization are pretty young - they make up for that with
-                diligence, effort, and professionalism with partners and
-                clients. I really look forward to working with them further, and
-                watching them transform from a collective network to a full
-                fledged agency. Salad salutes your service.
-              </p>
-              <h4>Salad Technologies Employee</h4>
-            </SwiperSlide>
-            <SwiperSlide className="review">
               <Review
                 name='Jared Carpenter'
                 description="I've worked with Mezo for a few months now, and while he and the
@@ -148,21 +138,45 @@ export default function Home() {
               />
             </SwiperSlide>
             <SwiperSlide className='review'>
-              <h3>Yeet Boi</h3>
-              <p>
-                I've worked with Mezo for a few months now, and while he and the
+              <Review
+                name='Yeet Boi'
+                description="I've worked with Mezo for a few months now, and while he and the
                 organization are pretty young - they make up for that with
                 diligence, effort, and professionalism with partners and
                 clients. I really look forward to working with them further, and
                 watching them transform from a collective network to a full
-                fledged agency. Salad salutes your service.
-              </p>
-              <h4>Friend</h4>
+                fledged agency. Salad salutes your service."
+                rank='Friend'
+              />
             </SwiperSlide>
           </Swiper>
         </section>
 
-        <footer>Made with ♥ by Mezo Management 2022 ©</footer>
+        <footer>
+          <div className='footer-info'>
+            <Image width={65} height={65} src={LogoColored} />
+            <p>© 2022 Mezo Management</p>
+          </div>
+          <div className='footer-links'>
+            <h4>About us</h4>
+            <Link href='/'>
+              <p>Our company</p>
+            </Link>
+            <Link href='/'>
+              <p>Our partners</p>
+            </Link>
+          </div>
+          <div className='footer-links'>
+            <h4>Links</h4>
+            <Link href='/'>
+              <p>Discord Server</p>
+            </Link>
+          </div>
+          <div className="footer-request">
+            <h4>Cooporate</h4>
+            <button className="send-request">Send request</button>
+          </div>
+        </footer>
 
         <BackToTopBtn />
       </main>

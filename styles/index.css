@@ -524,9 +524,62 @@ nav .nav-items p:hover {
 footer {
   background-color: #3a3335;
   width: 100vw;
+  height: 18vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+footer .footer-info {
+  margin-left: 12vw;
+  margin-top: 2vh;
+}
+footer .footer-info p {
   color: #fff;
-  height: 70px;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 9px;
+}
+footer .footer-request {
+  margin-right: 12vw;
+  margin-top: 3.5vh;
+}
+footer .footer-request h4 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+footer .footer-request .send-request {
+  color: #fff;
+  outline: none;
+  border: none;
+  background-color: #eb5e55;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 5px;
+}
+footer .footer-request .send-request:hover {
+  background-color: #e34257;
+}
+footer .footer-links {
+  margin-top: 3.5vh;
+}
+footer .footer-links h4 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+footer .footer-links p {
+  cursor: pointer;
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+footer .footer-links p:hover {
+  color: #eb5e55;
 }
