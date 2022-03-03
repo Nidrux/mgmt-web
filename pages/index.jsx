@@ -172,6 +172,12 @@ export default function Home() {
               <p>Discord Server</p>
             </Link>
           </div>
+          <div className='footer-links'>
+            <h4>Legal</h4>
+            <Link href='/'>
+              <p>Privacy Policy</p>
+            </Link>
+            </div>
           <div className="footer-request">
             <h4>Cooporate</h4>
             <button className="send-request">Send request</button>
