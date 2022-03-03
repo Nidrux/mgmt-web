@@ -1,5 +1,5 @@
 :root {
-  --swiper-pagination-color: #fff;
+  --swiper-pagination-color: #fdf0d5;
 }
 
 *,
@@ -40,7 +40,7 @@ body::-webkit-scrollbar-thumb {
 }
 .backToTopBtn i {
   font-size: 24px;
-  color: #fff;
+  color: #fdf0d5;
   user-select: none;
   padding: 12px;
 }
@@ -89,7 +89,7 @@ nav .nav-items {
 nav .nav-items p {
   margin-left: 38px;
   cursor: pointer;
-  color: #fff;
+  color: #fdf0d5;
   transition: all 0.3s ease;
   position: relative;
 }
@@ -111,7 +111,7 @@ nav .nav-items p:hover {
   text-align: center;
 }
 #landing h1 span {
-  color: #fff;
+  color: #fdf0d5;
   font-weight: 800;
 }
 
@@ -121,7 +121,7 @@ nav .nav-items p:hover {
 #info h2 {
   margin-left: 12vw;
   margin-right: 12vw;
-  color: #fff;
+  color: #fdf0d5;
   font-size: 28px;
   font-weight: 700;
 }
@@ -138,7 +138,7 @@ nav .nav-items p:hover {
   margin-left: 12vw;
 }
 #info .content .text p {
-  color: #fff;
+  color: #fdf0d5;
   font-weight: 300;
   font-size: 19px;
   width: 50vw;
@@ -163,7 +163,7 @@ nav .nav-items p:hover {
   margin-right: 12vw;
   padding-top: 8vh;
   font-weight: 700;
-  color: #fff;
+  color: #fdf0d5;
   font-size: 28px;
 }
 #faq h2 span {
@@ -201,14 +201,14 @@ nav .nav-items p:hover {
   margin: 12px 8px;
 }
 #faq .faq-container .faq-question .faq-q-head i {
-  color: #fff;
+  color: #fdf0d5;
   font-size: 32px;
   user-select: none;
   transition: all 0.2s ease;
 }
 #faq .faq-container .faq-question .faq-q-head h3 {
   font-weight: 500;
-  color: #fff;
+  color: #fdf0d5;
   margin-left: 3px;
   font-size: 18px;
   user-select: none;
@@ -217,7 +217,7 @@ nav .nav-items p:hover {
   transition: opacity 0.2s ease;
   opacity: 0;
   user-select: none;
-  color: #fff;
+  color: #fdf0d5;
   font-weight: 300;
   font-size: 16px;
   margin-left: 44px;
@@ -274,7 +274,7 @@ nav .nav-items p:hover {
 .dashboard-nav .nav-items p {
   margin-left: 38px;
   cursor: pointer;
-  color: #fff;
+  color: #fdf0d5;
   transition: all 0.3s ease;
   position: relative;
 }
@@ -319,10 +319,10 @@ nav .nav-items p:hover {
   opacity: 0;
 }
 .page-select .page-select-item:hover {
-  color: #fff;
+  color: #fdf0d5;
 }
 .page-select .page-select-item.active {
-  color: #fff;
+  color: #fdf0d5;
   cursor: default;
 }
 .page-select .page-select-item.active::after {
@@ -340,13 +340,13 @@ nav .nav-items p:hover {
   transition: all 0.3s ease;
 }
 .head h1 {
-  color: #fff;
+  color: #fdf0d5;
   font-weight: 600;
   font-size: 26px;
 }
 .head button {
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: #fdf0d5;
   font-weight: 400;
   font-size: 14px;
   cursor: pointer;
@@ -419,7 +419,7 @@ nav .nav-items p:hover {
 .applications .company h3,
 .applications .staff-member h3,
 .applications .application h3 {
-  color: #fff;
+  color: #fdf0d5;
   font-size: 16px;
   font-weight: 400;
 }
@@ -440,7 +440,7 @@ nav .nav-items p:hover {
 .applications .staff-member button,
 .applications .application button {
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: #fdf0d5;
   outline: none;
   border: none;
   background-color: #1b1b1b;
@@ -488,7 +488,7 @@ nav .nav-items p:hover {
   margin-right: 12vw;
   padding-top: 8vh;
   font-weight: 700;
-  color: #fff;
+  color: #fdf0d5;
   font-size: 28px;
   margin-left: 12vw;
   margin-right: 12vw;
@@ -502,19 +502,19 @@ nav .nav-items p:hover {
   margin-top: 24px;
 }
 #reviews .review-slider .review h3 {
-  color: #fff;
+  color: #fdf0d5;
   font-weight: 500;
   font-size: 20px;
   user-select: none;
 }
 #reviews .review-slider .review p {
-  color: #fff;
+  color: #fdf0d5;
   font-weight: 200;
   font-size: 18px;
   user-select: none;
 }
 #reviews .review-slider .review h4 {
-  color: #fff;
+  color: #fdf0d5;
   font-size: 12px;
   font-weight: 600;
   margin-top: 8px;
@@ -534,7 +534,7 @@ footer .footer-info {
   margin-top: 2vh;
 }
 footer .footer-info p {
-  color: #fff;
+  color: #fdf0d5;
   font-weight: 400;
   font-size: 16px;
   margin-left: 9px;
@@ -544,12 +544,12 @@ footer .footer-request {
   margin-top: 3.5vh;
 }
 footer .footer-request h4 {
-  color: #fff;
+  color: #fdf0d5;
   font-size: 16px;
   font-weight: 600;
 }
 footer .footer-request .send-request {
-  color: #fff;
+  color: #fdf0d5;
   outline: none;
   border: none;
   background-color: #eb5e55;
@@ -569,13 +569,13 @@ footer .footer-links {
   margin-top: 3.5vh;
 }
 footer .footer-links h4 {
-  color: #fff;
+  color: #fdf0d5;
   font-size: 16px;
   font-weight: 600;
 }
 footer .footer-links p {
   cursor: pointer;
-  color: #fff;
+  color: #fdf0d5;
   font-weight: 300;
   font-size: 16px;
   transition: all 0.3s ease;
