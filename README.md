@@ -4,13 +4,6 @@
 At Mezo Management, we bridge the gap between brands and content creators and help brands and creators alike find quality partnerships.
 
 
-## Roadmap
-
-- Staff Dashboard
-
-- Login Site
-
-
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
@@ -28,3 +21,4 @@ If you have any feedback, please reach out to us at system@mezomgmt.com
 
 - [@Marc](https://github.com/MarcWebDev)
 - [@Mezo](https://github.com/mezotv)
+
