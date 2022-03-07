@@ -22,7 +22,7 @@ function Nav() {
   return (
     <nav>
       <div className='logo'>
-        <Image width={60} height={60} src={Logo} />
+        <a href="/"><Image width={60} height={60} src={Logo} /></a>
       </div>
       <div className='nav-items'>
         <Link href={'/'}>
