@@ -1,13 +1,7 @@
 // TODO: Change this unsecure way later to an API GET-Request
-export default function checkEmail(emailToCheck) {
-  const allowedEmails = ["jackob.dev@gmail.com", "system@mezomnmt.com"];
-  let emailsMatch = false;
-  
-  for (let i = 0; i < allowedEmails.length; i++) {
-    if (emailToCheck === allowedEmails[i]) {
-      emailsMatch = true;
-    }
-  }
 
-  return emailsMatch;
+// (Nidrux) This is just a faster and cleaner way to do this.
+const allowedEmails = ["jackob.dev@gmail.com", "system@mezomnmt.com"];
+export default function checkEmail(emailToCheck) {
+  return allowedEmails.includes(emailToCheck);
 }
